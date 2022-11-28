@@ -50,12 +50,15 @@
     height: 45rem;
 }
 
+.first-section img{
+    max-width: fit-content;
+}
+
 .container-img h1{
     font-family: var(--Heebo);
     font-style: normal;
     font-weight: 800;
     font-size: 48px;
-    line-height: 70px;
     color: var(--white);
 }
 
@@ -64,7 +67,6 @@
     font-style: normal;
     font-weight: 500;
     font-size: 40px;
-    line-height: 59px;
     color: var(--white);
 }
 
@@ -73,16 +75,87 @@
     font-style: normal;
     font-weight: 400;
     font-size: 32px;
-    line-height: 47px;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--white);
 }
 
+.Image-first-section{
+    width: 340px;
+    height: 340px;
+}
+
+@media screen and (max-width: 1123px) {
+    .container-img p{
+        font-size: 28px;
+    }
+    .container-img{
+        max-width: 100%;
+        height: 49rem;
+    }
+}
+
+@media screen and (max-width: 912px){
+    .container-img h1{
+        font-size: 32px;
+    }
+    .container-img h2{
+        font-size: 26px;
+    }
+    .container-img p{
+        font-size: 24px;
+    }
+
+    .Image-first-section{
+        width: 240px;
+        height: 320px;
+    }
+    .container-img{
+        max-width: 100%;
+        height: 40rem;
+    }
+
+}
+
+@media screen and (max-width: 743px) {
+    .container-img{
+        max-width: 100%;
+        height: 44rem;
+    }
+}
+
+@media screen and (max-width: 730px){
+    .container-img{
+        max-width: 100%;
+        height: 44rem;
+    }
+    .container-img p{
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 430px){
+    .container-img{
+        max-width: 100%;
+        height: 47rem;
+    }
+
+    .container-img p{
+        font-size: 16px;
+    }
+
+    .Image-first-section{
+        width: 174px;
+        height: 230px;
+    }
+    }
+
 /* secound section */
 
 .second-section{
-    background-color: var(--burple);
+    height: 100%;
+    background: linear-gradient(180deg, #20233C -25.55%, #4B4F6C 371.69%, #565A78 468.61%);
+    background-size: cover;
     color: var(--white);
 }
 
@@ -92,7 +165,6 @@
     font-weight: 700;
     font-size: 26pt;
     line-height: 94px;
-
 }
 
 .second-section p{
@@ -102,4 +174,24 @@
     font-size: 20px;
     letter-spacing: 0.03em;
     text-transform: capitalize;
+}
+
+.separator-svg{
+    content: '';
+    background-image: url("img/wave1.svg");
+    background-size: cover;
+    background-repeat: none;
+    max-width: 100%;
+    height: 412px;
+    color: #565A78;
+}
+
+.separator-img{
+    
+    padding: 0;
+    margin: 0;
+    transform: rotate(180deg);
+    width: 100%;
+    padding-bottom: 20rem;   
+    color: #565A78;
 }
