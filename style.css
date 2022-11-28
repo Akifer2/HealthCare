@@ -1,13 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 :root{
+    /* fonts */
     --Heebo: 'Heebo', sans-serif;
+    --montserrat: 'Montserrat', sans-serif;
+    /* colors */
+    --white: #eeeeee;
+    --dark-burple: #20233C;
+    --burple: #565A78;
 }
 
 /*navbar */
 
 .bi-list{
-    color: white;
+    color:var(--white);
 }
 
 .navbar-brand img{
@@ -32,6 +40,66 @@
     font-weight: 700;
 }
 
-img{
-    width: 100%;
+/* img section */
+
+.container-img{
+    background-image: url("img/Main-image.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    max-width: 100%;
+    height: 45rem;
+}
+
+.container-img h1{
+    font-family: var(--Heebo);
+    font-style: normal;
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 70px;
+    color: var(--white);
+}
+
+.container-img h2{
+    font-family: var(--Heebo);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 59px;
+    color: var(--white);
+}
+
+.container-img p{
+    font-family: var(--Heebo);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 47px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--white);
+}
+
+/* secound section */
+
+.second-section{
+    background-color: var(--burple);
+    color: var(--white);
+}
+
+.second-section h1{
+    font-family: var(--Heebo);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26pt;
+    line-height: 94px;
+
+}
+
+.second-section p{
+    font-family: var(--montserrat);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    letter-spacing: 0.03em;
+    text-transform: capitalize;
 }
